@@ -236,6 +236,12 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 }
 
+.readmore h3, p {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
 /* ================================= 
   ASPECTS
 ==================================== */
@@ -760,7 +766,7 @@ hr, .copyright {
     }
 
     .nav__list li a {
-        color: white;
+        color: var(--light-one);
         font-size: 16px;
     }
 
@@ -802,10 +808,6 @@ hr, .copyright {
         display: none;
     }
 
-    .learn__button {
-        text-align: center;
-    }
-
     .nav__list li {
         margin: 40px;
     }
@@ -830,6 +832,12 @@ hr, .copyright {
         margin-bottom: 20px;
     }
 
+    .readmore h3, p { 
+        text-align: left;
+        max-width: 100%;
+        margin: auto;
+    }
+
     .info {
         margin-top: 30px;
         text-align: center;
@@ -847,11 +855,11 @@ hr, .copyright {
 
     .col1__poster {
         margin-right: 0;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .col2__poster {
-        text-align: center;
+        /* text-align: center; */
     }    
 
     .scroll__top {

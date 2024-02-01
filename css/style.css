@@ -810,6 +810,10 @@ hr, .copyright {
         margin: 40px;
     }
 
+    .nav__item:hover.nav__item a {
+        color: var(--light-one);
+    }
+
     ul li a {
         color: var(--light-one);
     }

@@ -171,6 +171,16 @@ nav {
 }
 
 /* ================================= 
+  HAMBURGER MENU
+==================================== */
+
+.toggle, .nav__close {
+    font-size: 30px;
+    color: var(--violet);
+    display: none;
+}
+
+/* ================================= 
   HERO
 ==================================== */
 
@@ -461,16 +471,6 @@ hr, .copyright {
 
 .scroll__top:hover {
     transform: scale(1.2);
-}
-
-/* ================================= 
-  BURGER MENU
-==================================== */
-
-.toggle {
-    font-size: 30px;
-    color: var(--violet);
-    display: none;
 }
 
 /* ================================= 
@@ -766,6 +766,7 @@ hr, .copyright {
         width: 100vw;
         height: 70vh;
         margin-top: -1000px;
+        padding: 50px 0;
     }
 
     .nav__list li a {
@@ -777,12 +778,22 @@ hr, .copyright {
         display: none;
     }
     
-    .nav__list.active {
+    .nav__list.show__menu {
         transition: margin 0.5s ease-in-out;
         margin-top: 0;
     }
 
     .toggle.change {
+        /* color: var(--light-one); */
+        display: none
+    }
+
+    .nav__close.show {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 100;
         color: var(--light-one);
     }
 
